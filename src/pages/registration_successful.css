@@ -1,0 +1,14 @@
+body{
+    background-color: #F3F4F9;
+    margin: 0px;
+    padding: 0px;
+}
+.card-successful{
+    margin-top: 182px;
+    margin-bottom: 183px;
+    margin-left: 36px;
+    margin-right: 35px;
+    height: 829px;
+    width: 357px;
+    background: #FFFFFF;
+}

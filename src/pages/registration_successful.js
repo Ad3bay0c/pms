@@ -1,9 +1,10 @@
+import './registration_successful.css';
+
 export default function successful(){
     return (
-        <div>
-            <div>
+            <div className="card-successful">
                 <div></div>
             </div>
-        </div>
+       
     )
 }
