@@ -22,19 +22,28 @@ export default function dashboard() {
         </div>
 
         <div className="itemTwo">
-          <p>Organization Address</p>
+          <p className="address">Organization Address</p>
           <label className="street-label">Street</label>
           <input className="street" type="text" name="Street" />
 
           <div className="country-section">
-            <label className="street-label">City</label>
-            <input className="street" type="text" name="Street" />
+            <div className="street">
+              <label className="street-label">City</label>
+              <input  type="text" name="Street" />
+            </div>
 
-            <label className="street-label">State</label>
-            <input className="street" type="text" name="Street" />
-
-            <label className="street-label">Country</label>
-            <input className="street" type="text" name="Street" />
+            <div>
+              <label className="street-label">State</label>
+              <input className="street" type="text" name="Street" />
+            </div>
+            <div>
+              <label className="street-label">Country</label>
+              <input className="street" type="text" name="Street" />
+            </div>
+            <hr/>
+            <button className="save">
+               Save
+            </button>
           </div>
         </div>
       </div>
