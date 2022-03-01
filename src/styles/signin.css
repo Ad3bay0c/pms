@@ -1,9 +1,7 @@
 .container {
   position: absolute;
-  width: 428px;
-  height: 925px;
   left: 0px;
-  top: 1px;
+  width: 100%;
 
   background: #f3f4f9;
 }
@@ -11,8 +9,7 @@
   position: absolute;
   width: 389px;
   /* height: 546px; */
-  left: 24px;
-  top: 194px;
+ 
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.02);
   box-sizing: border-box;
@@ -106,7 +103,10 @@ input[type="checkbox"] {
   height: 56px;
   margin: 20px 32px 4px 37px;
 }
-
+input.signin {
+  color: #ffffff;
+  font-weight: bold;
+}
 .signin p {
   position: absolute;
   text-align: center;
@@ -129,24 +129,28 @@ input[type="checkbox"] {
   width: 320px;
   height: 24px;
 }
-.account p{
+.account p {
   color: #6b51df;
 }
-
 
 @media screen and (min-width: 429px) {
   body {
     background: #f3f4f9;
+    width: 10%;
+
+
   }
   .container {
-    position: absolute;
-    width: 428px;
-    height: 959px;
+    position: relative;
   }
   .card {
     position: absolute;
-    width: 747px;
-    margin: 140px 352px 239px 341px;
+    overflow: hidden;
+    width: 45rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 20rem;
+
   }
   .logo {
     height: 43px;
@@ -189,7 +193,6 @@ input[type="checkbox"] {
     display: flex;
     align-content: center;
   }
-  
 
   .signin {
     margin: 0px 72px 19px 62px;
@@ -203,7 +206,7 @@ input[type="checkbox"] {
     width: 69px;
     margin: 16px 276px 16px 268px;
   }
-  .account{
+  .account {
     height: 24px;
     width: 289px;
     margin: 0px 396px 19px 62px;
