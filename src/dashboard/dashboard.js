@@ -27,18 +27,18 @@ export default function dashboard() {
           <input className="street" type="text" name="Street" />
 
           <div className="country-section">
-            <div className="street">
+            <div>
               <label className="street-label">City</label>
-              <input  type="text" name="Street" />
+              <input type="text" name="Street" />
             </div>
 
             <div>
               <label className="street-label">State</label>
-              <input className="street" type="text" name="Street" />
+              <input type="text" name="Street" />
             </div>
             <div>
               <label className="street-label">Country</label>
-              <input className="street" type="text" name="Street" />
+              <input type="text" name="Street" />
             </div>
             <hr/>
             <button className="save">
