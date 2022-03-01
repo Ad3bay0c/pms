@@ -10,24 +10,24 @@
     grid-template-areas:
       "advert header"
       "advert content"
-     
   }
 
   .item1 {
     background: LightSkyBlue;
     grid-area: header;
     height: 89px;
-    width: 1162px;
 
   }
 
   .item2 {
     background: LightSalmon;
     grid-area: advert;
-    height: 1202px;
     width: 280px;
+    position: static;
 
-
+  }
+  .country-section{
+      width: 719px;
   }
 
   .item3 {
@@ -53,9 +53,20 @@
     color: #6B51DF;
     margin-bottom: 12px;
   }
+  .vision-section input{
+       height: 56px;
+       width: 719px;
+       margin-left: 0;
+       margin-bottom: 29px;
+  }
 
-  .item .vision{
+  .item .vision {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
 
+    color: #242E3E;
   }
   
 
@@ -75,7 +86,16 @@
     margin-top: 39px;
 
   }
+  .street-label{
+      margin-right: 1058px;
+  }
 
   .itemTwo {
     background: BlanchedAlmond;
+  }
+    .street{
+    height: 56px;
+    width: 719px;
+    margin-left: 0;
+    margin-bottom: 29px;
   }
