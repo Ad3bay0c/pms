@@ -8,7 +8,60 @@ body{
     margin-bottom: 183px;
     margin-left: 36px;
     margin-right: 35px;
-    height: 829px;
     width: 357px;
+    height: 560px;
     background: #FFFFFF;
 }
+.tick-section{
+    background: #6B51DF;
+    height: 269px;
+    border-radius: 4px;
+}
+.successful-section{
+    margin-top: 33px;
+}
+.successful-section .awesome{
+    height: 38px;
+    width: 181px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0px 92px 33px 84px;
+}
+.successful-section .info{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: rgba(36, 46, 62, 0.5);
+    }
+.goto{
+position: relative;
+    height: 39px;
+    width: 200px;
+    margin: 33px 89px 72px 68px;
+    background: #6B51DF;
+    border-radius: 30px;
+}
+.goto p{
+    position: absolute;
+    margin: 6px 5px 9px 6px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    height: 24px;
+    width: 189px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+
