@@ -5,14 +5,14 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="body">
+    
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
-    </div>
+    
   );
 };
 
