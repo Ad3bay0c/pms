@@ -1,0 +1,82 @@
+.dashboard {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: ;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+     
+  }
+
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+    height: 89px;
+    width: 1162px;
+
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+    height: 1202px;
+    width: 280px;
+
+
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    margin: 70px 0 0 40px;
+  }
+  .item3 h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0px 0 35px 0px;
+  }
+
+  .item3 .profile{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    
+    color: #6B51DF;
+  }
+  hr{
+      margin-top: 24px;
+      margin-bottom: 13px;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .itemOne {
+    background: PaleGreen;
+    height: 228px;
+    width: 720px;
+    background: #FFFFFF;
+    border: 1px solid #D1DCDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+  }
+
+  .itemTwo {
+    background: BlanchedAlmond;
+  }
