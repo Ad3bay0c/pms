@@ -1,4 +1,4 @@
-import "./registration_successful.css";
+import "../styles/registration_successful.css";
 
 export default function successful() {
   return (
