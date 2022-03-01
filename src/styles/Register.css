@@ -12,14 +12,10 @@
   input.submit {
     display: block;
   }
+}
   input {
-    position: absolute;
-    left: 12.62%;
-    right: 12.85%;
-    width: 319;
-    height: 56;
+    margin: 0px 36px 24px 34px;
     padding: 15px;
-
     background: #ffffff;
     border: 1px solid #d1dcde;
     box-sizing: border-box;
@@ -33,9 +29,6 @@
   }
 
   label {
-    position: absolute;
-    left: 12.62%;
-
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -55,22 +48,20 @@
   }
   .card {
     position: absolute;
+    margin: 98px 19px 94px 17px;
     width: 389px;
     height: 732px;
-    left: 20px;
-    top: 99px;
 
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.02);
     box-sizing: border-box;
     border-radius: 5px;
   }
+
   .logo {
-    position: absolute;
     width: 76.06px;
     height: 43px;
-    left: 186.74px;
-    top: 60px;
+    margin: 36px 146.2px 18px 166.74px;
 
     font-weight: 500;
     font-size: 36px;
@@ -80,11 +71,9 @@
     color: #131111;
   }
   .title {
-    position: absolute;
     width: 327px;
     height: 28px;
-    left: 44px;
-    top: 106px;
+    margin: 0px 38px 42px 24px;
 
     font-family: Rubik;
     font-style: normal;
@@ -96,51 +85,21 @@
     color: #000000;
   }
   label.organization {
-    right: 43.22%;
-    top: 22.76%;
-    bottom: 65.65%;
+    margin: 0px 166px 7px 34px;
   }
-  input.organization {
-    top: 27.11%;
-    bottom: 65.84%;
-  }
+  
   label.email {
-    right: 44.16%;
-    top: 36.76%;
-    bottom: 56.65%;
-  }
-
-  input.email {
-    top: 41.11%;
-    bottom: 51.84%;
+    margin: 0px 170px 7px 34px;
   }
 
   label.password {
-    right: 43.22%;
-    top: 51.43%;
-    bottom: 44.97%;
-  }
-
-  input.password {
-    top: 55.78%;
-    bottom: 37.16%;
+    margin: 0px 166px 7px 34px;
   }
   label.confirm {
-    right: 44.16%;
-    top: 66.43%;
-    bottom: 32.97%;
-  }
-
-  input.confirm {
-    top: 70.78%;
-    bottom: 22.16%;
+    margin: 0px 170px 7px 34px;
   }
   input.submit {
-    position: absolute;
-    left: 12.15%;
-    right: 13.08%;
-    top: 80.76%;
-    bottom: 12.19%;
+    margin: 0px 37px 16px 32px;
 
     background: #6b51df;
     border-radius: 4px;
@@ -149,12 +108,8 @@
     font-weight: bold;
   }
   .footer {
-    position: absolute;
-    left: 9.81%;
-    right: 15.42%;
-    top: 92.54%;
-    bottom: 8.86%;
-
+    margin: 0px 45px 27px 32px;
+   
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -168,7 +123,6 @@
 
     color: rgba(36, 46, 62, 0.5);
   }
-}
 
 @media screen and (min-width: 481px) {
   .title2 {
@@ -185,11 +139,6 @@
     display: none;
   }
   input {
-    position: absolute;
-    left: 12.62%;
-    right: 12.85%;
-    width: 319;
-    height: 56;
     padding: 15px;
 
     background: #ffffff;
@@ -203,9 +152,6 @@
     outline: 0 none;
   }
   label {
-    position: absolute;
-    left: 12.62%;
-
     font-family: Rubik;
     font-style: normal;
     font-weight: 500;
@@ -223,93 +169,36 @@
     font-weight: bold;
     margin-left: 5px;
   }
-  .card {
-    position: absolute;
-    width: 747px;
-    height: 724px;
-    left: 341px;
-    top: 106px;
-
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  .logo {
-    position: absolute;
-    width: 76.06px;
-    height: 43px;
-    left: 275.74px;
-    top: 60px;
-
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 43px;
-    /* identical to box height */
-
-    color: #131111;
-  }
-  .title2 {
-    position: absolute;
-    width: 275px;
-    height: 28px;
-    left: 200px;
-    top: 110px;
-
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #000000;
-  }
   label.organization {
-    right: 43.22%;
-    top: 22.76%;
-    bottom: 65.65%;
+    margin: 0px 497px 7px 66px;
   }
   input.organization {
-    top: 27.11%;
-    bottom: 65.84%;
+    margin: 0px 69px 24px 65px;
   }
   label.email {
-    right: 44.16%;
-    top: 36.76%;
-    bottom: 56.65%;
+    margin: 0px 497px 7px 66px;
   }
 
   input.email {
-    top: 41.11%;
-    bottom: 51.84%;
+    margin: 0px 69px 24px 65px;
   }
 
   label.password {
-    right: 43.22%;
-    top: 51.43%;
-    bottom: 44.97%;
+    margin: 0px 497px 7px 66px;
   }
 
   input.password {
-    top: 55.78%;
-    bottom: 37.16%;
+    margin: 0px 69px 24px 65px;
   }
   label.confirm {
-    right: 44.16%;
-    top: 66.43%;
-    bottom: 32.97%;
+    margin: 0px 497px 7px 66px;
   }
 
   input.confirm {
-    top: 70.78%;
-    bottom: 22.16%;
+    margin: 0px 69px 24px 65px;
   }
   input.submit2 {
-    position: absolute;
-    left: 12.15%;
-    right: 13.08%;
-    top: 80.76%;
-    bottom: 12.19%;
+    margin: 0px 68px 19px 66px;
 
     background: #6b51df;
     border-radius: 4px;
@@ -318,11 +207,7 @@
     font-weight: bold;
   }
   .footer {
-    position: absolute;
-    left: 9.81%;
-    right: 15.42%;
-    top: 92.54%;
-    bottom: 8.86%;
+    margin: 0px 378px 32px 66px;
 
     font-family: Rubik;
     font-style: normal;
@@ -336,5 +221,45 @@
     text-align: center;
 
     color: rgba(36, 46, 62, 0.5);
+  }
+
+  .card {
+    position: absolute;
+    margin: 100px 352px 128px 335px;
+    width: 747px;
+    height: 724px;
+    /* left: 341px;
+    top: 106px; */
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .logo {
+    width: 76.06px;
+    height: 43px;
+    margin: 29px 326px 25px 344px;
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+
+    color: #131111;
+  }
+  .title2 {
+    width: 275px;
+    height: 28px;
+    margin: 0px 232px 25px 240px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
   }
 }
