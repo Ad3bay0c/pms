@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/signin.css";
+import "../../styles/signin.css";
 
 export default function signup() {
   return (
