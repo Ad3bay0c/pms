@@ -16,6 +16,7 @@ body{
     background: #6B51DF;
     height: 269px;
     border-radius: 4px;
+    position: relative;
 }
 .successful-section{
     margin-top: 33px;
@@ -58,6 +59,20 @@ position: relative;
     height: 24px;
     width: 189px;
     text-align: center;
+    color: #FFFFFF;
+}
+
+.ellipse{
+    position: absolute;
+    margin: 71px 116.4px 74.44px 117px;
+    border: 3px solid #FFFFFF;
+    height: 123.55999755859375px;
+    width: 123.55931854248047px;
+    border-radius: 50%;
+}
+.tick{
+    position: absolute;
+    margin: 110px 150.7px 115px 151.29px;
     color: #FFFFFF;
 }
 
