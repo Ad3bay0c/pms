@@ -12,9 +12,10 @@
   input.submit {
     display: block;
   }
-}
+
   input {
     margin: 0px 36px 24px 34px;
+    width: 80%;
     padding: 15px;
     background: #ffffff;
     border: 1px solid #d1dcde;
@@ -46,7 +47,7 @@
     font-weight: bold;
     margin-left: 5px;
   }
-  .card {
+  .card1 {
     position: absolute;
     margin: 98px 19px 94px 17px;
     width: 389px;
@@ -84,18 +85,18 @@
 
     color: #000000;
   }
-  label.organization {
-    margin: 0px 166px 7px 34px;
+  label.organizationLabel {
+    margin: 42px 166px 7px 34px;
   }
-  
-  label.email {
+
+  label.emailLabel {
     margin: 0px 170px 7px 34px;
   }
 
-  label.password {
+  label.passwordLabel {
     margin: 0px 166px 7px 34px;
   }
-  label.confirm {
+  label.confirmLabel {
     margin: 0px 170px 7px 34px;
   }
   input.submit {
@@ -109,7 +110,7 @@
   }
   .footer {
     margin: 0px 45px 27px 32px;
-   
+
     font-family: Rubik;
     font-style: normal;
     font-weight: 300;
@@ -123,7 +124,7 @@
 
     color: rgba(36, 46, 62, 0.5);
   }
-
+}
 @media screen and (min-width: 481px) {
   .title2 {
     display: block;
@@ -140,7 +141,7 @@
   }
   input {
     padding: 15px;
-
+    width: 80%;
     background: #ffffff;
     border: 1px solid #d1dcde;
     box-sizing: border-box;
@@ -169,13 +170,13 @@
     font-weight: bold;
     margin-left: 5px;
   }
-  label.organization {
+  label.organizationLabel {
     margin: 0px 497px 7px 66px;
   }
   input.organization {
     margin: 0px 69px 24px 65px;
   }
-  label.email {
+  label.emailLabel {
     margin: 0px 497px 7px 66px;
   }
 
@@ -183,14 +184,14 @@
     margin: 0px 69px 24px 65px;
   }
 
-  label.password {
+  label.passwordLabel {
     margin: 0px 497px 7px 66px;
   }
 
   input.password {
     margin: 0px 69px 24px 65px;
   }
-  label.confirm {
+  label.confirmLabel {
     margin: 0px 497px 7px 66px;
   }
 
@@ -223,8 +224,7 @@
     color: rgba(36, 46, 62, 0.5);
   }
 
-  .card {
-    position: absolute;
+  .card1 {
     margin: 100px 352px 128px 335px;
     width: 747px;
     height: 724px;
