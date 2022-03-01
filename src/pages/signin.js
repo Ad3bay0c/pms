@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
+import './signin.css';
 export default function signup() {
   return (
     <div className="container">
       <div className="card">
-        <h3 className="logo">PMS</h3>
+        <h2 className="logo">PMS</h2>
         <p className="title">Sign in to your account </p>
         <div className="form">
           <label className="email">Email</label>
@@ -14,16 +14,18 @@ export default function signup() {
           <input className="password-input" type="password" />
 
           <div className="fp-section">
+            <input type="checkbox" />
             <div className="remember">
-              <input type="checkbox" />
-              <p>Remember me</p>
-            </div>
-            <p className="fp">Forgot password?</p>
+              <p className="rm">Remember me</p>
+              <p className="fp">Forgot password?</p>
+            </div> 
           </div>
-          <div className="signin"><p>Sign In</p></div>
+          <div className="signin">
+            <p>Sign In</p>
+          </div>
         </div>
 
-        {/* <div className="account">Don’t have an account? Sign up</div> */}
+        <div className="account">Don’t have an account? Sign up</div>
       </div>
     </div>
   );
