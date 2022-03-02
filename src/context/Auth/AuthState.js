@@ -12,7 +12,7 @@ import {
   SET_ERROR,
 } from "../type";
 import axios from "../../axios";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const AuthState = (props) => {
   const initialState = {
@@ -37,6 +37,7 @@ const AuthState = (props) => {
         dispatch({
           type: REMOVE_ALERT,
         });
+        navigate("/");
       }, 5000);
     } catch (err) {
       dispatch({
@@ -63,8 +64,8 @@ const AuthState = (props) => {
         dispatch({
           type: REMOVE_ALERT,
         });
-        navigate("/login");
-      }, 5000);
+        navigate("/successful");
+      }, 2000);
     } catch (err) {
       console.log(err.response.data.errors);
       dispatch({
@@ -82,23 +83,26 @@ const AuthState = (props) => {
   // Logout User
   const LogoutUser = () => {
     dispatch({
-      type: LOGOUT
-    })
-  }
-  
+      type: LOGOUT,
+    });
+    Navigate("/login");
+  };
+
   // Load User
   const LoadOrganization = async () => {
     try {
-      const res = await axios.get("/settings/get-organization");
-      console.log(res.data)
+      const res = await axios.get(
+        `/settings/get-organization/${localStorage.getItem("p")}`
+      );
+      console.log(res.data);
       // dispatch({
       //   type: LOAD_ORGANIZATION,
       //   payload: res.data,
       // });
     } catch (err) {
-      console.log(err);
+      console.log(err.response);
     }
-  }
+  };
   const [state, dispatch] = useReducer(AuthReducer, initialState);
 
   return (

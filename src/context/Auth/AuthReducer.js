@@ -29,17 +29,18 @@ const AuthReducer = (state = {}, action) => {
         },
       };
     case LOGIN_SUCCESS:
-      console.log(action.payload);
       localStorage.setItem("token", action.payload.data.token);
+      localStorage.setItem("p", action.payload.data.user.id);
       return {
         ...state,
         user: action.payload.data.user,
         alert: {
-          msg: action.payload.message,
+          msg: "Login Successfully",
           type: "success",
         },
         isAuthenticated: true,
         token: action.payload.data.token,
+        id: action.payload.data.user.id,
       };
     case LOGOUT:
     case LOGIN_FAIL:
