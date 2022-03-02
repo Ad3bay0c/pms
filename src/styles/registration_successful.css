@@ -5,13 +5,13 @@ body {
   width: 60px;
   margin: 0 auto;
 }
-.link {
+.link1 {
   color: #f5f4f7;
   text-decoration: none;
   font-weight: bold;
   margin-left: 5px;
 }
-.link:hover {
+.link1:hover {
   color: #f5f4f7;
 }
 .card-successful {

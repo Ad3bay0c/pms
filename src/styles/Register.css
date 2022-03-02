@@ -170,6 +170,9 @@
     font-weight: bold;
     margin-left: 5px;
   }
+  .link:hover {
+    color: #6b51df;
+  }
   label.organizationLabel {
     margin: 0px 497px 7px 66px;
   }

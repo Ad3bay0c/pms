@@ -24,7 +24,7 @@ export default function successful() {
         <p className="info">Your organization has been successfully created.</p>
         <div className="goto">
           <p>
-            <Link className="link" to="/login">
+            <Link className="link1" to="/login">
               Go to Login
             </Link>
           </p>
