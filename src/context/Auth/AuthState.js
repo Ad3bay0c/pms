@@ -38,7 +38,7 @@ const AuthState = (props) => {
           type: REMOVE_ALERT,
         });
         navigate("/");
-      }, 5000);
+      }, 2000);
     } catch (err) {
       dispatch({
         type: SET_ALERT,

@@ -35,7 +35,7 @@ const AuthReducer = (state = {}, action) => {
         ...state,
         user: action.payload.data.user,
         alert: {
-          msg: "Login Successfully",
+          msg: "Login Successful",
           type: "success",
         },
         isAuthenticated: true,
