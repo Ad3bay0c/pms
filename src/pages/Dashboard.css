@@ -65,6 +65,9 @@ input {
   color: #242e3e;
   margin-top: 23px;
 }
+.organisation-vision .h5 {
+  width: 450px;
+}
 .organisation-vision label {
   margin-top: 0;
   font-style: normal;
@@ -77,7 +80,9 @@ input {
 
   color: rgba(36, 46, 62, 0.5);
 }
-
+label {
+  font-family: sans-serif, sans-serif !important;
+}
 .organisation-vision input {
   margin-top: 0px;
   width: 719px;
@@ -87,8 +92,8 @@ input {
 }
 
 .organization-address .h5 {
-  font-style: normal;
-  font-weight: normal;
+  font-style: normal !important;
+  font-weight: normal !important;
   font-size: 22px;
   line-height: 26px;
   color: #242e3e;
@@ -149,6 +154,7 @@ select:focus {
 .ant-layout-sider-dark {
   background-color: #fff !important;
 }
+
 .text {
   font-style: normal;
   font-weight: normal;
@@ -189,10 +195,14 @@ select:focus {
 .search-section .h5 {
   margin-top: 12px;
   margin-left: 42px;
+  width: 350px;
+}
+.search-section input {
+  border: none;
 }
 .bell-section {
   display: flex;
-  margin-left: 733px;
+  margin-left: 455px;
 }
 .bell-section .bell {
   margin-right: 44.12px;
