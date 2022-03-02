@@ -11,14 +11,6 @@ import PrivateRoute from "./PrivateRoute";
 import AuthContext from "./context/Auth/AuthContext";
 
 const App = () => {
-  // const { LoadOrganization } = useContext(AuthContext);
-
-  // useLayoutEffect(() => {
-  //   if (localStorage.token) {
-  //     LoadOrganization();
-  //   }
-  //   // eslint-disable-next-line
-  // }, []);
   return (
     <Router>
       <AuthState>

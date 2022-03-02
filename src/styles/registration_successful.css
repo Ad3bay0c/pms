@@ -1,9 +1,18 @@
 body {
-width: 2rem;
+  width: 2rem;
 }
 .container {
-    width: 60px;
-    margin: 0 auto;
+  width: 60px;
+  margin: 0 auto;
+}
+.link {
+  color: #f5f4f7;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.link:hover {
+  color: #f5f4f7;
 }
 .card-successful {
   margin-top: 182px;

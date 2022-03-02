@@ -8,8 +8,8 @@ const PrivateRoute = ({ children }) => {
   if (token === null) {
     return <Navigate to="/login" />;
   }
-  if (isAuthenticated) {
-    return <Navigate to="/" />;
+  if (!isAuthenticated) {
+    return <Navigate to="/login" />;
   }
   return children;
 };
