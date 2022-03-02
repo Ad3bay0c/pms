@@ -1,7 +1,10 @@
-import { Fragment } from "react";
+import { Fragment } from 'react'
+import Dashboard from './Dashboard'
 
-const Home = () => <Fragment>
-  Welcome to the home page!
-</Fragment>
+const Home = () => (
+  <Fragment>
+    <Dashboard />
+  </Fragment>
+)
 
-export default Home;
+export default Home
