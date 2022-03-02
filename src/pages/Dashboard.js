@@ -85,53 +85,59 @@ const Dashboard = () => {
             >
               <Menu.Item
                 className='text'
-                key='5'
-                style={{ marginLeft: '26.82px', marginBottom: '37px' }}
+                key='7'
+                style={{
+                  width: 253,
+                  marginLeft: '26.82px',
+                  marginBottom: '37px',
+                }}
               >
                 System Setting
               </Menu.Item>
               <Menu.Item
                 className='text'
                 key='6'
-                style={{ marginLeft: '26.82px' }}
+                style={{ width: 253, marginLeft: '26.82px' }}
               >
                 General Settings
               </Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
-        <Layout>
-          <Header
-            className='header-section'
-            // style={{
-            //   height: `89px`,
-            //   background: `#ffffff`,
-            // }}
-          >
-            <AlignRightOutlined
-              style={{ fontSize: `28px`, marginRight: `72px` }}
-            />
+        <div>
+          <Layout>
+            <Header
+              className='header-section'
+              style={{
+                height: `89px`,
+                // background: `#ffffff`,
+              }}
+            >
+              <AlignRightOutlined
+                style={{ fontSize: `28px`, marginRight: `72px` }}
+              />
 
-            <div className='search-section'>
-              <SearchIcon />
-              <div className='h5'>
-                <h5>Search</h5>
+              <div className='search-section'>
+                <SearchIcon />
+                <div className='h5'>
+                  <input type='text' placeholder='Search' />
+                </div>
               </div>
-            </div>
 
-            <div className='bell-section'>
-              <div className='bell'>
-                <Bell />
+              <div className='bell-section'>
+                <div className='bell'>
+                  <Bell />
+                </div>
+                <div>
+                  <UserIcon />
+                </div>
               </div>
-              <div>
-                <UserIcon />
-              </div>
-            </div>
-          </Header>
-          <Content style={{ background: '#E5E5E5' }}>
-            <DashboardContent />
-          </Content>
-        </Layout>
+            </Header>
+            <Content style={{ background: '#E5E5E5', marginBottom: '-145px' }}>
+              <DashboardContent />
+            </Content>
+          </Layout>
+        </div>
       </Layout>
     </>
   )
