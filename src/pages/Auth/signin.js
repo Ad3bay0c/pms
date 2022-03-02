@@ -10,7 +10,7 @@ const SignIn = () => {
 
   const { LoginUser, isAuthenticate } = useContext(AuthContext);
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     if (isAuthenticate) {
       navigate("/");
