@@ -1,9 +1,9 @@
-import React from 'react'
-import { Typography, Divider, Card, Input, Button, Select } from 'antd'
+
+import { Typography, Divider, Input, Button } from 'antd'
+
 
 const DashboardContent = () => {
   const { Title } = Typography
-  const { Option } = Select
 
   return (
     <div

@@ -1,30 +1,20 @@
 import React from 'react'
-import { useState } from 'react'
-import { Layout, Menu, Typography, Input } from 'antd'
+import { Layout, Menu } from 'antd'
 import {
-  SearchOutlined,
   SettingOutlined,
   UserOutlined,
-  BellFilled,
   AlignRightOutlined,
 } from '@ant-design/icons'
 import './Dashboard.css'
 import DashboardContent from './Dashboard-Content'
 import 'antd/dist/antd.css'
-import { LaptopOutlined, NotificationOutlined } from '@ant-design/icons'
 
 const { SubMenu } = Menu
 
-const { Header, Sider, Content, Footer } = Layout
-const { Title } = Typography
-const Dashboard = () => {
-  const [collapsed, setCollapsed] = useState({
-    collapsed: false,
-  })
+const { Header, Sider, Content } = Layout
 
-  const toggle = () => {
-    setCollapsed(!collapsed)
-  }
+const Dashboard = () => {
+  
 
   return (
     <>
