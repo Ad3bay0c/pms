@@ -2,7 +2,6 @@ import { useReducer } from "react";
 import AuthContext from "./AuthContext";
 import AuthReducer from "./AuthReducer";
 import {
-  LOAD_ORGANIZATION,
   LOGIN_SUCCESS,
   LOGOUT,
   REGISTER_SUCCESS,
