@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useContext, useLayoutEffect } from "react";
 import Home from "./pages/Home";
 import Register from "./pages/Auth/Register";
 import Signin from "./pages/Auth/signin";
@@ -8,7 +7,6 @@ import AuthState from "./context/Auth/AuthState";
 import Alert from "./components/Alert/Alert";
 import Error from "./components/Alert/Error";
 import PrivateRoute from "./PrivateRoute";
-import AuthContext from "./context/Auth/AuthContext";
 
 const App = () => {
   return (
