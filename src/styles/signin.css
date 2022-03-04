@@ -15,27 +15,17 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
-.logo {
-  margin-top: 34px;
-  margin-left: 166.74px;
-  margin-right: 146.2px;
-  margin-bottom: 0;
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 43px;
-  width: 76.06px;
-  height: 43px;
+.sign-logo {
+  margin: 45px 63px 25px 146px;
 }
 
-.title {
+.sign-title {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  margin: 18px 63px 0 62px;
+  margin: 25px 25px 0 62px;
   width: 264px;
   height: 28px;
 }
@@ -152,16 +142,16 @@ input.signin {
     margin-left: 20rem;
 
   }
-  .logo {
+  .sign-logo{
     height: 43px;
     width: 77px;
-    margin: 44px 326px 25px 344px;
+    margin: 44px 344px 25px 326px;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
   }
-  .title {
+  .sign-title {
     margin: 0px 250px 25px 240px;
     font-style: normal;
     font-weight: normal;

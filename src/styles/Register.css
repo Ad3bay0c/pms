@@ -1,9 +1,13 @@
 @media screen and (max-width: 480px) {
   .title2 {
     display: none;
+    font-style: normal;
+    font-weight: normal;
   }
   .title {
     display: block;
+    font-style: normal;
+    font-weight: normal;
   }
   input.submit2 {
     display: none;
@@ -30,7 +34,6 @@
   }
 
   label {
-    font-family: Rubik;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -75,8 +78,6 @@
     width: 327px;
     height: 28px;
     margin: 0px 38px 42px 24px;
-
-    font-family: Rubik;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -110,8 +111,6 @@
   }
   .footer {
     margin: 0px 45px 27px 32px;
-
-    font-family: Rubik;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -128,9 +127,13 @@
 @media screen and (min-width: 481px) {
   .title2 {
     display: block;
+    font-style: normal;
+    font-weight: normal;
   }
   .title {
     display: none;
+    font-style: normal;
+    font-weight: normal;
   }
   input.submit2 {
     display: block;

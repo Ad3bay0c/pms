@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Register.css";
 import AuthContext from "../../context/Auth/AuthContext";
-
+import Logo from "../../components/Alert/logo";
 const Register = () => {
   const [user, setUser] = useState({
     email: "",
@@ -83,7 +83,7 @@ const Register = () => {
   };
   return (
     <div className="card1">
-      <div className="logo">PMS</div>
+      <div className="logo"><Logo/></div>
       <div className="title">Register your Organization</div>
       <div className="title2">Create your Organization</div>
 
