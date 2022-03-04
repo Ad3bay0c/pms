@@ -31,7 +31,9 @@ const SignIn = () => {
   return (
     <div className="container">
       <div className="card">
-        <div className="sign-logo"><Logo/></div>
+        <div className="sign-logo">
+          <Logo />
+        </div>
         <p className="sign-title">Sign in to your account </p>
         <div className="form">
           <form onSubmit={handleLogin}>
@@ -64,11 +66,11 @@ const SignIn = () => {
             />
 
             <div className="fp-section">
-              <input type="checkbox" />
               <div className="remember">
+                <input type="checkbox" />
                 <p className="rm">Remember me</p>
-                <p className="fp">Forgot password?</p>
               </div>
+              <p className="fp">Forgot password?</p>
             </div>
             <input type="submit" value="Sign In" className="signin" />
           </form>

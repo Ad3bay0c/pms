@@ -62,9 +62,10 @@ input[type="checkbox"] {
 }
 
 .fp-section {
-  margin: 23px 36px 0 34px;
+  margin: 23px 37px 0 0px;
   display: flex;
   align-content: center;
+  justify-content: space-between;
 }
 
 .remember {
@@ -85,6 +86,11 @@ input[type="checkbox"] {
 .fp {
   margin-left: 11px;
   margin-right: 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(36, 46, 62, 0.5);
 }
 .signin {
   background: #6b51df;
