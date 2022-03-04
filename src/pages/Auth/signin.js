@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import AuthContext from "../../context/Auth/AuthContext";
 import "../../styles/signin.css";
+import Logo from "../../components/Alert/logo";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -30,9 +31,8 @@ const SignIn = () => {
   return (
     <div className="container">
       <div className="card">
-        <h2 className="logo">PMS</h2>
-        <p className="title">Sign in to your account </p>
-        <p className="title2">Sign in to your account </p>
+        <div className="sign-logo"><Logo/></div>
+        <p className="sign-title">Sign in to your account </p>
         <div className="form">
           <form onSubmit={handleLogin}>
             {error && (
