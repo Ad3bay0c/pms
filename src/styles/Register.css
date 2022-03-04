@@ -52,7 +52,6 @@
   }
   .card1 {
     position: absolute;
-    margin: 98px 19px 94px 17px;
     width: 389px;
     height: 732px;
 
@@ -65,7 +64,7 @@
   .logo {
     width: 76.06px;
     height: 43px;
-    margin: 36px 146.2px 18px 166.74px;
+    margin: 36px 166.74px 18px 146.2px;
 
     font-weight: 500;
     font-size: 36px;
@@ -87,7 +86,7 @@
     color: #000000;
   }
   label.organizationLabel {
-    margin: 42px 166px 7px 34px;
+    margin: 0px 166px 7px 34px;
   }
 
   label.emailLabel {
