@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
-import AuthContext from "../../context/Auth/AuthContext";
-const Alert = () => {
-  const { alert, LoadOrganization } = useContext(AuthContext);
+import { useEffect } from "react";
+import { connect } from "react-redux";
+import { LoadOrganization } from "../../actions/authAction";
 
+const Alert = ({ auth: { alert }, LoadOrganization }) => {
   useEffect(() => {
     if (localStorage.token) {
       LoadOrganization();
@@ -18,5 +18,7 @@ const Alert = () => {
     </div>
   ) : null;
 };
-
-export default Alert;
+const mapStateToProp = (state) => ({
+  auth: state.auth,
+});
+export default connect(mapStateToProp, { LoadOrganization })(Alert);
