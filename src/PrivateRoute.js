@@ -1,10 +1,7 @@
-import { useContext } from "react";
+import { connect } from "react-redux";
 import { Navigate } from "react-router-dom";
-import AuthContext from "./context/Auth/AuthContext";
 
-const PrivateRoute = ({ children }) => {
-  const { isAuthenticated, token } = useContext(AuthContext);
-
+const PrivateRoute = ({ children, auth: {isAuthenticated, token} }) => {
   if (token === null) {
     return <Navigate to="/login" />;
   }
@@ -13,5 +10,7 @@ const PrivateRoute = ({ children }) => {
   }
   return children;
 };
-
-export default PrivateRoute;
+const mapStateToProp = state => ({
+  auth: state.auth
+})
+export default connect(mapStateToProp)(PrivateRoute);
