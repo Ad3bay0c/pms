@@ -1,9 +1,12 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/Register.css";
-import AuthContext from "../../context/Auth/AuthContext";
 import Logo from "../../components/Alert/logo";
-const Register = () => {
+import { RegisterUser } from "../../actions/authAction";
+
+const Register = ({ auth: { isAuthenticated, loading, alert }, RegisterUser }) => {
   const [user, setUser] = useState({
     email: "",
     name: "",
@@ -12,13 +15,15 @@ const Register = () => {
   });
   const navigate = useNavigate();
   const [error, setError] = useState({});
-  const { RegisterUser, isAuthenticate } = useContext(AuthContext);
 
   useEffect(() => {
-    if (isAuthenticate) {
+    if (isAuthenticated) {
       navigate("/");
     }
-  }, [isAuthenticate, navigate]);
+    if (!loading && alert === null) {
+      navigate("/successful");
+    }
+  }, [isAuthenticated, navigate]);
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -83,7 +88,9 @@ const Register = () => {
   };
   return (
     <div className="card1">
-      <div className="logo"><Logo/></div>
+      <div className="logo">
+        <Logo />
+      </div>
       <div className="title">Register your Organization</div>
       <div className="title2">Create your Organization</div>
 
@@ -177,5 +184,11 @@ const Register = () => {
     </div>
   );
 };
-
-export default Register;
+Register.propTypes = {
+  auth: PropTypes.object.isRequired,
+  RegisterUser: PropTypes.func.isRequired,
+};
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+export default connect(mapStateToProps, { RegisterUser })(Register);

@@ -1,22 +1,22 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useContext, useState, useEffect } from "react";
-import AuthContext from "../../context/Auth/AuthContext";
+import { connect } from "react-redux";
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import "../../styles/signin.css";
 import Logo from "../../components/Alert/logo";
+import { LoginUser } from "../../actions/authAction";
 
-const SignIn = () => {
+const SignIn = ({ auth: { isAuthenticated }, LoginUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
-  const { LoginUser, isAuthenticate } = useContext(AuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isAuthenticate) {
+    if (isAuthenticated) {
       navigate("/");
     }
-  }, [isAuthenticate, navigate]);
+  }, [isAuthenticated, navigate]);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -25,6 +25,9 @@ const SignIn = () => {
     } else {
       setError("");
       LoginUser(email, password);
+      if (isAuthenticated) {
+        navigate("/");
+      }
     }
   };
 
@@ -86,5 +89,11 @@ const SignIn = () => {
     </div>
   );
 };
-
-export default SignIn;
+SignIn.propTypes = {
+  LoginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+};
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+});
+export default connect(mapStateToProps, { LoginUser })(SignIn);
