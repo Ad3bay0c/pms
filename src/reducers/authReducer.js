@@ -7,6 +7,7 @@ import {
   REMOVE_ERROR,
   SET_ALERT,
   SET_ERROR,
+  LOAD_ORGANIZATION,
 } from "../actions/type";
 
 const initialState = {
@@ -15,8 +16,9 @@ const initialState = {
   alert: null,
   errors: null,
   token: null,
+  loading: false,
 };
-export default AuthReducer = (state = initialState, action) => {
+const AuthReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_ORGANIZATION:
       return {
@@ -33,6 +35,7 @@ export default AuthReducer = (state = initialState, action) => {
           msg: action.payload.message,
           type: "success",
         },
+        loading: true,
       };
     case LOGIN_SUCCESS:
       localStorage.setItem("token", action.payload.data.token);
@@ -71,6 +74,7 @@ export default AuthReducer = (state = initialState, action) => {
       return {
         ...state,
         alert: null,
+        loading: false,
       };
     case REMOVE_ERROR:
       return {
@@ -81,3 +85,5 @@ export default AuthReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export default AuthReducer;
